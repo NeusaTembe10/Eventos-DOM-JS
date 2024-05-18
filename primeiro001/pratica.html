@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos laaaaaaaaaaa</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 255, 0.692);
+            color: white;
+            display: inline;
+            font: normal 10pt Arial;
+
+        }
+
+    </style>
+</head>
+<body>
+   <h1>Estou tentando ne?</h1> 
+<input type="number" name="n1" id="n1"> +
+<input type="number" name="n2" id="n3">
+<input type="button" value="Subtrair" onclick="Subtrair()">
+<div id="res">Resultado</div>
+   <script>
+    function Subtrair() {
+        var s1=window.document.getElementById('n1')
+        var s2= window.document.getElementById('n2')
+        var res=window.document.getElementById('res')
+        var v1=Number(s1.value)
+        var v2=Number(s2.value)
+        var s= v1+v2
+        
+        res.innerHTML=`A subtracao entre ${v1} e ${v2} e igual a ${s}`
+    }
+
+   </script>
+
+
+</body>
+</html>
